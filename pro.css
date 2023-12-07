@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    text-align: center;
+    background: linear-gradient(#191970, #2c7bd4,#191970);
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)); */
+}
+#content-box{
+    width: 550px;
+    height: fit-content;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#calculate{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(139, 9, 31);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#resultPercent{
+    font-size: 50px;
+}
+.year, .month{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.all{
+    display: flex;
+    justify-content: space-between;
+}
+#myChart{
+    background-color: white;
+    color: black;
+}

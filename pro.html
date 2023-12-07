@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="pro.css">
+    <script src="pro.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="content-box">
+        <h1>Predictive Analysis</h1>
+        <br>
+        <p>Enter your value to see possible sales for next Month</p>
+        <br>
+        <div class="yearMonth">
+            <select class="year" name="year" required="true" id="" aria-required="true">
+                <option value="">Select Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+            <select class="month" name="month" required="true" id="" aria-required="true">
+                <option value="">Select Month</option>
+                <option value="nMonth">Next Month</option>
+            </select>
+        </div>
+        <br><br>
+        <div class="all">
+            <div class="left">
+                <label for="firstNum">Last Two Month Sales: </label>
+            </div>
+            <div class="right">
+                <input type="text" id="firstNum" name="firstNum" class="right" required><br><br>
+            </div>
+        </div>
+        <div class="all">
+            <div class="left">
+                <label for="secondNum">Last Month Sales: </label>
+            </div>
+            <div class="right">
+                <input type="text" id="secondNum" name="secondNum" class="right" required><br><br>
+            </div>
+        </div>
+        <div class="all">
+            <div class="left">
+                <label for="thirdNum">Current Month Sales: </label>
+            </div>
+            <div class="right">
+                <input type="text" id="thirdNum" name="thirdNum" class="right" required><br><br>
+            </div>
+        </div>
+
+        <button id="calculate">Calculate</button>
+        <br><br>
+        <br><br>
+        <h2 id="resultMessage1"></h2>
+        <p id="resultPercent"></p>
+        <h2 id="resultMessage2"></h2>
+        <h2 id="resultMessage3"></h2>
+        <h2 id="resultMessage4"></h2>
+    </div>
+    <canvas id="myChart" width="150" height="50"></canvas>
+</body>
+</html>
